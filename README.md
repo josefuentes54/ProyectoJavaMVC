@@ -9,10 +9,14 @@ El sistema cuenta con entidades principales, como Cliente, Contacto y Funcionari
 El proyecto utiliza el framework Spring y sigue el patrón de diseño MVC (Modelo-Vista-Controlador) para organizar y separar las responsabilidades. Además, se utiliza una base de datos para almacenar y recuperar la información de los clientes.
 
 Características
-Agregar nuevos clientes: Permite registrar la información de un nuevo cliente, incluyendo su nombre, apellido, dirección, teléfono, nombre de mascota, tipo de mascota, fecha de reserva, nombre de contacto de emergencia y teléfono de contacto de emergencia.
-Listar clientes existentes: Permite ver la lista de todos los clientes registrados en el sistema, mostrando su información básica.
-Eliminar clientes: Permite eliminar un cliente específico del sistema utilizando su número de identificación único (RUT).
-Actualizar información de clientes: Permite modificar la información de un cliente existente, como su dirección, teléfono de contacto y nombre de contacto de emergencia.
+Agregar nuevos clientes/mascotas: Permite registrar la información de un nuevo cliente, incluyendo su nombre, apellido, dirección, teléfono, nombre de mascota, tipo de mascota, fecha de reserva, nombre de contacto de emergencia y teléfono de contacto de emergencia.
+
+Listar clientes/mascotas existentes: Permite ver la lista de todos los clientes registrados en el sistema, mostrando su información básica.
+
+Eliminar clientes/mascotas: Permite eliminar un cliente específico del sistema utilizando su número de identificación único (RUT).
+
+Actualizar información de clientes/mascotas: Permite modificar la información de un cliente existente, como su dirección, teléfono de contacto y nombre de contacto de emergencia.
+
 Validación de credenciales: Permite verificar las credenciales de un usuario para controlar el acceso al sistema.
 
 Requisitos del Sistema
@@ -22,18 +26,11 @@ Base de datos compatible con el sistema (por ejemplo, MySQL, PostgreSQL)
 
 
 Instalación y Uso
-Clona el repositorio: git clone https://github.com/tu_usuario/tu_repositorio.git
-Navega al directorio del proyecto: cd tu_repositorio
+Clona el repositorio: git clone https://github.com/josefuentes54/ProyectoJavaMVC.git
+Navega al directorio del proyecto: cd josefuentes54
 Configura las opciones de configuración en el archivo config.yml.
 Compila y ejecuta la aplicación: mvn clean install && mvn spring-boot:run
 Accede a la aplicación desde tu navegador en http://localhost:8080.
-Contribución
-Haz un fork del repositorio.
-Crea una rama para tu nueva funcionalidad: git checkout -b nueva-funcionalidad
-Realiza los cambios y commitea: git commit -m "Agrega nueva funcionalidad"
-Haz un push a tu rama: git push origin nueva-funcionalidad
-Crea un pull request en GitHub.
-
 
 Autores
 Jose Ignacio Fuentes Osorio

@@ -8,7 +8,23 @@ El sistema cuenta con entidades principales, como Cliente, Contacto y Funcionari
 
 El proyecto utiliza el framework Spring y sigue el patrón de diseño MVC (Modelo-Vista-Controlador) para organizar y separar las responsabilidades. Además, se utiliza una base de datos para almacenar y recuperar la información de los clientes.
 
-Características
+## Tecnologías utilizadas
+
+- HTML, CSS y JS para el desarrollo del sitio web.
+- Utilización de Bootstrap para estilos y responsividad.
+- Spring MVC para el desarrollo del backend.
+- Repositorios para el acceso a datos.
+
+## Uso
+
+1. Accede a la aplicación.
+2. Inicia sesión con tus credenciales según tu rol de usuario.
+3. Para iniciar sesion en la aplicaciones y explorar las diferentes funcionalidades disponibles según tu rol prueba con:
+a.- Rol de administrativo: id: 1 , password: 123
+b.- Rol de secretario:  id: 2, password:1234
+
+
+## Características
 Agregar nuevos clientes/mascotas: Permite registrar la información de un nuevo cliente, incluyendo su nombre, apellido, dirección, teléfono, nombre de mascota, tipo de mascota, fecha de reserva, nombre de contacto de emergencia y teléfono de contacto de emergencia.
 
 Listar clientes/mascotas existentes: Permite ver la lista de todos los clientes registrados en el sistema, mostrando su información básica.
@@ -25,12 +41,66 @@ Spring Framework
 Base de datos compatible con el sistema (por ejemplo, MySQL, PostgreSQL)
 
 
-Instalación y Uso
-Clona el repositorio: git clone https://github.com/josefuentes54/ProyectoJavaMVC.git
-Navega al directorio del proyecto: cd josefuentes54
-Configura las opciones de configuración en el archivo config.yml.
-Compila y ejecuta la aplicación: mvn clean install && mvn spring-boot:run
-Accede a la aplicación desde tu navegador en http://localhost:8080.
+## Instrucciones de instalación
+
+1. Clona el repositorio de GitHub: `git clone https://github.com/yogalarebelion/kriyaSpringMvc.git`
+2. Importa el proyecto en tu entorno de desarrollo favorito.
+3. Configura la conexión a la base de datos con el Script.
+4. Ejecuta la aplicación.
+
+## Usos
+
+a) Sitio Web
+(HTML, CSS, Bootstrap): /ProyectoSpringMVC/Web Pages/WEB-INF/jsp
+(JS): para el modal del login en index y con ruta al archivo javascript
+/ProyectoSpringMVC/Web Pages/WEB-INF/js/funciones.js. 
+
+b) Algoritmia de cálculo y manipulación de archivos de texto:
+
+Utilización general del lenguaje: 
+
+- Se utilizan sentencias lógicas (if, else, switch) -->
+/ProyectoSpringMVC/Source Packages/Repository/DirectorioRepository.java
+linea 126 del metodo "eliminarActividades"
+
+- Se emplean expresiones y operaciones para realizar cálculos y manipulaciones de los archivos de texto:
+/ProyectoSpringMVC/Source Packages/Repository/UsuarioRepository.java.
+En el método listarUsuariosPorRol(), se realiza una consulta SQL para obtener la cantidad de usuarios por rol.
+
+- Se aplican comparaciones para evaluar condiciones y tomar decisiones: 
+En el método login, se realiza una comparación switch para evaluar el valor de la variable resultado. Dependiendo del resultado, se agregan diferentes atributos al modelo y se redirige a diferentes vistas.
+/ProyectoSpringMVC/Source Packages/Controller/UsuarioController.java.
+linea 85.
+
+- Sentencias repetitivas: Se utilizan bucles (for, while) para iterar sobre los elementos:
+/ProyectoSpringMVC/Web Pages/WEB-INF/jsp/vistaAdministrador, linea 151.
+
+- Estructuras de datos: Se emplean estructuras de datos apropiadas, como listas, arrays o colecciones:
+/ProyectoSpringMVC/Source Packages/Repository/UsuarioRepository.java
+linea 75 metodo "listarUsuario()".
+
+- Principios de encapsulamiento y responsabilidad única: Se crean clases y métodos que se centran en tareas específicas y tienen una única responsabilidad:
+/ProyectoSpringMVC/Source Packages/Model/.
+
+- Uso de interfaces o relaciones de herencia para hacer polimorfismo: Se utilizan interfaces:
+/ProyectoSpringMVC/Source Packages/Model/Validar.java.
+
+- Utilización de unidades de prueba:
+/ProyectoSpringMVC/Test Packages/Controller/DirectorioRepositoryTest.java.
+
+c) Consultas a la base de datos de la aplicación:
+
+- Utilización de JOIN y GROUP BY:
+/ProyectoSpringMVC/Source Packages/Repository/UsuarioRepository.java
+linea 125 del metodo "listarUsuariosPorRol()".
+
+- Utilización de WHERE: 
+/ProyectoSpringMVC/Source Packages/Repository/DirectorioRepository.java
+linea 115 del metodo "eliminarActividades()".
+
+- Utilizacion de ORDER BY:
+/ProyectoSpringMVC/Source Packages/Repository/DirectorioRepository.java
+linea 69 del metodo "listarActividades()".
 
 Autores
 Jose Ignacio Fuentes Osorio

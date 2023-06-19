@@ -43,7 +43,7 @@ Base de datos compatible con el sistema (por ejemplo, MySQL, PostgreSQL)
 
 ## Instrucciones de instalación
 
-1. Clona el repositorio de GitHub: `git clone https://github.com/yogalarebelion/kriyaSpringMvc.git`
+1. Clona el repositorio de GitHub: `git clone https://github.com/josefuentes54/ProyectoJavaMVC.git
 2. Importa el proyecto en tu entorno de desarrollo favorito.
 3. Configura la conexión a la base de datos con el Script.
 4. Ejecuta la aplicación.
@@ -51,14 +51,14 @@ Base de datos compatible con el sistema (por ejemplo, MySQL, PostgreSQL)
 ## Usos
 
 - Sitio Web
-(HTML, CSS, Bootstrap): /ProyectoSpringMVC/Web Pages/WEB-INF/jsp
+(HTML, CSS, Bootstrap): /ProyectoMVC/Web Pages/WEB-INF/jsp
 
 - Algoritmia de cálculo y manipulación de archivos de texto:
 
 ## Utilización general del lenguaje: 
 
 - Se utilizan sentencias lógicas (if, else, switch) -->
-/ProyectoSpringMVC/Source Packages/DAO/
+/ProyectoMVC/Source Packages/DAO/
 linea 126 del metodo "eliminarActividades"
 
 - Se emplean expresiones y operaciones para realizar cálculos y manipulaciones de los archivos de texto:
@@ -67,24 +67,24 @@ En el método listarUsuariosPorRol(), se realiza una consulta SQL para obtener l
 
 - Se aplican comparaciones para evaluar condiciones y tomar decisiones: 
 En el método login, se realiza una comparación switch para evaluar el valor de la variable resultado. Dependiendo del resultado, se agregan diferentes atributos al modelo y se redirige a diferentes vistas.
-/ProyectoSpringMVC/Source Packages/Controller/UsuarioController.java.
+/ProyectoMVC/Source Packages/Controller/UsuarioController.java.
 linea 85.
 
 - Sentencias repetitivas: Se utilizan bucles (for, while) para iterar sobre los elementos:
-/ProyectoSpringMVC/Web Pages/WEB-INF/jsp/vistaAdministrador, linea 151.
+/ProyectoSpringMVC/Web Pages/WEB-INF/jsp/funcionarios.jsp, linea 151.
 
 - Estructuras de datos: Se emplean estructuras de datos apropiadas, como listas, arrays o colecciones:
-/ProyectoSpringMVC/Source Packages/Repository/UsuarioRepository.java
+/ProyectoSpringMVC/Source Packages/DAO/UsuarioDAO.java
 linea 75 metodo "listarUsuario()".
 
 - Principios de encapsulamiento y responsabilidad única: Se crean clases y métodos que se centran en tareas específicas y tienen una única responsabilidad:
-/ProyectoSpringMVC/Source Packages/Model/.
+/ProyectoMVC/Source Packages/Model/.
 
 - Uso de interfaces o relaciones de herencia para hacer polimorfismo: Se utilizan interfaces:
-/ProyectoSpringMVC/Source Packages/Model/Validar.java.
+/ProyectoMVC/Source Packages/Model/Validar.java.
 
 - Utilización de unidades de prueba:
-/ProyectoSpringMVC/Test Packages/Controller/DirectorioRepositoryTest.java.
+/ProyectoMVC/Test Packages/Controller/FuncionarioDAOTest.java.
 
 c) Consultas a la base de datos de la aplicación:
 

@@ -1,7 +1,7 @@
-# ProyectoJavaMVC
+## ProyectoJavaMVC
 El proyecto es un sistema de gestión de clientes y mascotas para una empresa de veterinaria.
 
-Descripción
+## Descripción
 El sistema de gestión de clientes es una aplicación que permite a la empresa administrar la información de sus clientes y las mascotas asociadas. Proporciona funcionalidades como agregar nuevos clientes, listar clientes existentes, eliminar clientes y actualizar la información de los clientes. Además, permite validar las credenciales de los usuarios para acceder al sistema.
 
 El sistema cuenta con entidades principales, como Cliente, Contacto y Funcionario, y se basa en una arquitectura de tres capas: DAO (Data Access Object), Service y Controller. Cada entidad tiene su propia clase DAO que se encarga de acceder a los datos en la base de datos, un Service que implementa la lógica de negocio y un Controller que maneja las solicitudes de los usuarios.
@@ -35,7 +35,7 @@ Actualizar información de clientes/mascotas: Permite modificar la información 
 
 Validación de credenciales: Permite verificar las credenciales de un usuario para controlar el acceso al sistema.
 
-Requisitos del Sistema
+## Requisitos del Sistema
 Java 8 o superior
 Spring Framework
 Base de datos compatible con el sistema (por ejemplo, MySQL, PostgreSQL)
@@ -50,21 +50,19 @@ Base de datos compatible con el sistema (por ejemplo, MySQL, PostgreSQL)
 
 ## Usos
 
-a) Sitio Web
+- Sitio Web
 (HTML, CSS, Bootstrap): /ProyectoSpringMVC/Web Pages/WEB-INF/jsp
-(JS): para el modal del login en index y con ruta al archivo javascript
-/ProyectoSpringMVC/Web Pages/WEB-INF/js/funciones.js. 
 
-b) Algoritmia de cálculo y manipulación de archivos de texto:
+- Algoritmia de cálculo y manipulación de archivos de texto:
 
-Utilización general del lenguaje: 
+## Utilización general del lenguaje: 
 
 - Se utilizan sentencias lógicas (if, else, switch) -->
-/ProyectoSpringMVC/Source Packages/Repository/DirectorioRepository.java
+/ProyectoSpringMVC/Source Packages/DAO/
 linea 126 del metodo "eliminarActividades"
 
 - Se emplean expresiones y operaciones para realizar cálculos y manipulaciones de los archivos de texto:
-/ProyectoSpringMVC/Source Packages/Repository/UsuarioRepository.java.
+/ProyectoSpringMVC/Source Packages/DAO/UsuarioDAO.java
 En el método listarUsuariosPorRol(), se realiza una consulta SQL para obtener la cantidad de usuarios por rol.
 
 - Se aplican comparaciones para evaluar condiciones y tomar decisiones: 

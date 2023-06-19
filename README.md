@@ -2,7 +2,7 @@
 El proyecto es un sistema de gestión de clientes y mascotas para una empresa de veterinaria.
 
 ## Descripción
-El sistema de gestión de clientes es una aplicación que permite a la empresa administrar la información de sus clientes y las mascotas asociadas. Proporciona funcionalidades como agregar nuevos clientes, listar clientes existentes, eliminar clientes y actualizar la información de los clientes. Además, permite validar las credenciales de los usuarios para acceder al sistema.
+El sistema de gestión de clientes y mascotas es una aplicación que permite a la empresa administrar la información de sus clientes y las mascotas asociadas. Proporciona funcionalidades como agregar nuevos clientes, listar clientes existentes, eliminar clientes y actualizar la información de los clientes, lo mismo para las mascotas. Además, permite validar las credenciales de los usuarios para acceder al sistema.
 
 El sistema cuenta con entidades principales, como Cliente, Contacto y Funcionario, y se basa en una arquitectura de tres capas: DAO (Data Access Object), Service y Controller. Cada entidad tiene su propia clase DAO que se encarga de acceder a los datos en la base de datos, un Service que implementa la lógica de negocio y un Controller que maneja las solicitudes de los usuarios.
 
@@ -36,9 +36,9 @@ Actualizar información de clientes/mascotas: Permite modificar la información 
 Validación de credenciales: Permite verificar las credenciales de un usuario para controlar el acceso al sistema.
 
 ## Requisitos del Sistema
-Java 8 o superior
+Java 8
 Spring Framework
-Base de datos compatible con el sistema (por ejemplo, MySQL, PostgreSQL)
+Base de datos relacional compatible con el sistema (por ejemplo, MySQL, PostgreSQL)
 
 
 ## Instrucciones de instalación
@@ -62,7 +62,7 @@ Base de datos compatible con el sistema (por ejemplo, MySQL, PostgreSQL)
 linea 126 del metodo "eliminarActividades"
 
 - Se emplean expresiones y operaciones para realizar cálculos y manipulaciones de los archivos de texto:
-/ProyectoSpringMVC/Source Packages/DAO/UsuarioDAO.java
+/ProyectoMVC/Source Packages/DAO/UsuarioDAO.java
 En el método listarUsuariosPorRol(), se realiza una consulta SQL para obtener la cantidad de usuarios por rol.
 
 - Se aplican comparaciones para evaluar condiciones y tomar decisiones: 
@@ -71,10 +71,10 @@ En el método login, se realiza una comparación switch para evaluar el valor de
 linea 85.
 
 - Sentencias repetitivas: Se utilizan bucles (for, while) para iterar sobre los elementos:
-/ProyectoSpringMVC/Web Pages/WEB-INF/jsp/funcionarios.jsp, linea 151.
+/ProyectoMVC/Web Pages/WEB-INF/jsp/funcionarios.jsp, linea 151.
 
 - Estructuras de datos: Se emplean estructuras de datos apropiadas, como listas, arrays o colecciones:
-/ProyectoSpringMVC/Source Packages/DAO/UsuarioDAO.java
+/ProyectoMVC/Source Packages/DAO/UsuarioDAO.java
 linea 75 metodo "listarUsuario()".
 
 - Principios de encapsulamiento y responsabilidad única: Se crean clases y métodos que se centran en tareas específicas y tienen una única responsabilidad:
@@ -89,7 +89,7 @@ linea 75 metodo "listarUsuario()".
 c) Consultas a la base de datos de la aplicación:
 
 - Utilización de JOIN y GROUP BY:
-/ProyectoSpringMVC/Source Packages/Repository/UsuarioRepository.java
+/ProyectoMVC/Source Packages/DAO/UsuarioDAO.java
 linea 125 del metodo "listarUsuariosPorRol()".
 
 - Utilización de WHERE: 
